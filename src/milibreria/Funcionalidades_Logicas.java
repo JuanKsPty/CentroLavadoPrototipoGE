@@ -5,9 +5,9 @@ public class Funcionalidades_Logicas {
     private int tipoRopa;
     private double volumenAgua;
 
-    final double TIEMPO_SUAVE = 3.0;
-    final double TIEMPO_NORMAL = 4.0;
-    final double TIEMPO_PESADO = 5.0;
+    private final double TIEMPO_SUAVE = 3.0;
+    private final double TIEMPO_NORMAL = 4.0;
+    private final double TIEMPO_PESADO = 5.0;
 
     final double TEMP_MAX_SECO = 35.7;
     final double TEMP_PLANCHAR = 40.7;
