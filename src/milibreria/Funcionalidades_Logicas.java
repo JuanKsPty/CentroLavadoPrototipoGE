@@ -9,8 +9,8 @@ public class Funcionalidades_Logicas {
     private final double TIEMPO_NORMAL = 4.0;
     private final double TIEMPO_PESADO = 5.0;
 
-    final double TEMP_MAX_SECO = 35.7;
-    final double TEMP_PLANCHAR = 40.7;
+    private double TEMP_MAX_SECO = 35.7;
+    private final double TEMP_PLANCHAR = 40.7;
 
     public Funcionalidades_Logicas(double peso, int tipoRopa, double volumenAgua) {
         this.peso = peso;
@@ -75,11 +75,11 @@ public class Funcionalidades_Logicas {
         System.out.println("Secado en proceso...");
 
         double temperaturaAlcanzada = Math.random() < 0.5 ? TEMP_MAX_SECO : TEMP_PLANCHAR;
-
+        System.out.println("Temperatura final: " + temperaturaAlcanzada + "C°.");
         if (temperaturaAlcanzada >= TEMP_PLANCHAR) {
             System.out.println("Secado completo: Se ha alcanzado temperatura de planchado.");
         } else if (temperaturaAlcanzada >= TEMP_MAX_SECO) {
-            System.out.println("Secado completo: Solo se ha secado la prenda.");
+            System.out.println("Secado completo: Solo se ha secado la prenda. ");
         } else {
             System.out.println("Advertencia: No se alcanzó temperatura suficiente de secado.");
         }
