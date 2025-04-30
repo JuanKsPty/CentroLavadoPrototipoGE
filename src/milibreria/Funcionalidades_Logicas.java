@@ -9,7 +9,7 @@ public class Funcionalidades_Logicas {
     private final double TIEMPO_NORMAL = 4.0;
     private final double TIEMPO_PESADO = 5.0;
 
-    private double TEMP_MAX_SECO = 35.7;
+    private final double TEMP_MAX_SECO = 35.7;
     private final double TEMP_PLANCHAR = 40.7;
 
     public Funcionalidades_Logicas(double peso, int tipoRopa, double volumenAgua) {
